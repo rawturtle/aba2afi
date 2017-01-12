@@ -1,0 +1,7 @@
+version: '2'
+services:
+  job:
+    build: .
+    command: python src/app.py "$ABA_FILE"
+    volumes:
+      - .:/code
